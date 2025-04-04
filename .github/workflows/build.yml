@@ -44,19 +44,19 @@ jobs:
                 prerelease: false
 
             - name: "Upload amd64 Linux artifact"
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-pages-artifact@v3
               with:
                 name: http-post-to-mqtt-linux-amd64-${{ env.RELEASE_VERSION }}
                 path: http-post-to-mqtt-linux-amd64-${{ env.RELEASE_VERSION }}
 
             - name: "Upload arm64 Linux artifact"
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-pages-artifact@v3
               with:
                 name: http-post-to-mqtt-linux-arm64-${{ env.RELEASE_VERSION }}
                 path: http-post-to-mqtt-linux-arm64-${{ env.RELEASE_VERSION }}
 
             - name: "Upload Windows x64 artifact"
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-pages-artifact@v3
               with:
                     name: http-post-to-mqtt-windows-amd64-${{ env.RELEASE_VERSION }}.exe
                     path: http-post-to-mqtt-windows-amd64-${{ env.RELEASE_VERSION }}.exe
